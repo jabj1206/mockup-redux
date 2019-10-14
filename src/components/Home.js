@@ -4,11 +4,11 @@ import SidePanel from "./SidePanel";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { search } from "../actions/index";
+import { listDepartures } from "../actions/index";
 
 class Home extends Component {
   componentDidMount() {
-    this.props.search();
+    this.props.listDepartures();
   }
 
   render() {
@@ -42,10 +42,10 @@ class Home extends Component {
 }
 
 const mapStateToProps = state => {
-  return { departures: state.search };
+  return { departures: state.departures };
 };
 
 export default connect(
   mapStateToProps,
-  { search }
+  { listDepartures }
 )(Home);

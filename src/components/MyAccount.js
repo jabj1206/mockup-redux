@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React from "react";
 
-class MyAccount extends Component {
-  render() {
-    return (
-      <div>
-        <h2>My Account</h2>
-      </div>
-    );
-  }
-}
+const MyAccount = () => {
+  return (
+    <div>
+      <h2>My Account</h2>
+    </div>
+  );
+};
 
 export default MyAccount;

@@ -3,14 +3,11 @@ import departures from "../apis/departures";
 import history from "../history";
 
 export const search = data => {
-  return (dispatch, getState) => {
-    const { departures } = getState();
-
-    dispatch({
-      type: "SEARCH",
-      departures,
-      payload: data
-    });
+  console.log(data);
+  
+  return {
+    type: "SEARCH",
+    payload: data
   };
 };
 
