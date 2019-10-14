@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
 import {reducer} from 'redux-form';
-import list from './list'
 import departures from './departures'
+import search from './search'
 
 export default combineReducers ({
-  list,
   form: reducer,
-  departures
+  departures,
+  search
 })

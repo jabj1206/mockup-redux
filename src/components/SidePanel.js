@@ -58,7 +58,7 @@ class SidePanel extends Component {
           Status
           </div>
           <div className="col-12 " style={{width:'80%', marginTop:'10px'}}>          
-          <SearchBar />
+          <SearchBar search='searchSide'/>
           </div>
         </div>
       </>

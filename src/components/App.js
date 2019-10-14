@@ -5,16 +5,18 @@ import history from "../history";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/app.css";
 
+import 'bootstrap/dist/js/bootstrap.bundle'
+
 // import components
 import NavBar from "./NavBar";
 import SearchBar from "./SearchBar";
 import Home from "./Home";
 import Messages from "./Messages";
-import Form from "./Form";
 import Wishlist from "./Wishlist";
 import Settings from "./Settings";
 import MyAccount from "./MyAccount";
 import CreateDeparture from "./CreateDeparture";
+import NoMatch from './NoMatch'
 
 
 
@@ -33,7 +35,7 @@ class App extends Component {
               <NavBar />
               <div className="row">
                 <div className="col-4 offset-8" style={{ marginTop: "20px" }}>
-                  <SearchBar />
+                  <SearchBar/>
                 </div>
               </div>
             </div>
@@ -46,6 +48,8 @@ class App extends Component {
               <Route path="/settings" exact component={Settings} />
               <Route path="/account" exact component={MyAccount} />
               <Route path="/new" exact component={CreateDeparture} />
+              <Route component={NoMatch} />
+
             </Switch>
           </div>
         </div>

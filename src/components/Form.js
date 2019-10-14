@@ -17,7 +17,7 @@ class Form extends Component {
   }
 
   renderInput = ({ input, label, type, meta }) => {
-    const className = `form-control ${meta.error && meta.touched ? 'is-invalid': '' }`
+       const className = `form-control ${meta.error && meta.touched ? 'is-invalid': '' }`
     return (
       <>
         <label>{label}</label>

@@ -20,4 +20,9 @@ a:active {
 
 /*Mobile menu icon color*/
 
-
+.icons-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
