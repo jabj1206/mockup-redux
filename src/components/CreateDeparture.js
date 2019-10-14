@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import Form from './Form'
 
-import {createDeparture} from '../actions/index'
+import {createDeparture, createDepartures} from '../actions/index'
 
 class CreateDeparture extends Component {
   onSubmit = formValues => {
@@ -19,4 +19,4 @@ class CreateDeparture extends Component {
   }
 }
 
-export default connect(null, {createDeparture})(CreateDeparture);
+export default connect(null, {createDeparture, createDepartures})(CreateDeparture);
