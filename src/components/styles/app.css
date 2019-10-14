@@ -1,0 +1,38 @@
+body{
+  background-color: #e6e6e6;
+  color: gray
+}
+
+.page-title:after {
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+  width: 80%; /* Change this to whatever width you want. */  
+  border-bottom: 1px solid gray; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.left-border{
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+  width: 80%; /* Change this to whatever width you want. */  
+  border-right: 1px solid gray; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.add-button{
+  position: Fixed;
+  right: 50px;
+  top: 500px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: orange;
+  cursor: pointer
+  }
+
+  .add-button:hover{
+    opacity: 0.7;
+  }
+
+.addp{
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  padding: 18px 32px; 
+  z-index: 90;
+}

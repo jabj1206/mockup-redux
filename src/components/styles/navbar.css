@@ -1,0 +1,23 @@
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+
+/* Navigation Bar */
+.navbar .navbar-nav>a{
+  color: #292929
+}
+
+.navbar .navbar-nav>a:hover,
+.navbar .navbar-nav>a:focus {
+  color: #ffffff;
+  background-color: #1D3A4F;
+}
+
+
+/*Mobile menu icon color*/
+
+
