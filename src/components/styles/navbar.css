@@ -26,3 +26,12 @@ a:active {
   align-items: center;
   justify-content: center;
 }
+
+.size {
+  font-size: 25px;
+}
+
+.active-link{
+  color: #ffffff;
+  background-color: #ff4;
+}
