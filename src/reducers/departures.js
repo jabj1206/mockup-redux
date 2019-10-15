@@ -12,6 +12,7 @@ export default (state = data, action) => {
     case "FETCH_DEPARTURES":
       return action.payload;
     case "SEARCH":
+      const data = state
       if (action.payload) {
         const value = action.payload.toLowerCase();
         const result = state.filter(val => {
@@ -22,7 +23,7 @@ export default (state = data, action) => {
         });
         return result;
       } else {
-        return state;
+        return data;
       }
     default:
       return state;

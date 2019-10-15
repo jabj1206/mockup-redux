@@ -1,15 +1,5 @@
 import data from "../data";
 import departures from "../apis/departures";
-import history from "../history";
-
-export const search = data => {
-  console.log(data);
-  
-  return {
-    type: "SEARCH",
-    payload: data
-  };
-};
 
 export const initialState = () => {
   return {
@@ -43,9 +33,16 @@ export const fetchDepartures = () => async dispatch => {
   dispatch({ type: "FETCH_DEPARTURES", payload: response.data });
 };
 
-export const createDepartures = formValues => async dispatch => {
-  const response = await departures.post("/departures", { ...formValues });
+export const search = data => {
+  return {
+    type: "SEARCH",
+    payload: data
+  };
+};
 
-  dispatch({ type: "CREATE_DEPARTURE", payload: response.data });
-  history.push("/");
+export const filter = filter => {
+  return {
+    type: "SORT",
+    payload: filter
+  };
 };

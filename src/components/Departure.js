@@ -1,8 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import { deleteDeparture } from "../actions/index";
 import { connect } from "react-redux";
 import Moment from "react-moment";
 import NumberFormat from "react-number-format";
+
 import "./styles/departure.css";
 
 const Departure = props => {
@@ -74,13 +75,13 @@ const Departure = props => {
             <i className="fa fa-ellipsis-v"></i>
           </button>
           <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a className="dropdown-item" href="#" onClick={_onClick}>
+            <a className="dropdown-item" href="/" onClick={_onClick}>
               <span className="obj">
                 <i className="departureE fa fa-trash"></i>
                 &nbsp;Delete
               </span>
             </a>
-            <a className="dropdown-item" href="#">
+            <a className="dropdown-item" href="/">
               <span className="obj">
                 <i className="fa fa-edit" />
                 &nbsp;Edit

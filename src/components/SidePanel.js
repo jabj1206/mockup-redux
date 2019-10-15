@@ -1,8 +1,16 @@
 import React from "react";
 import SearchBar from "./SearchBar";
+import { connect } from "react-redux";
+
+import { filter } from "../actions/index";
 import "./styles/sidePanel.css";
 
 const SidePanel = () => {
+  const handleChecked = e => {
+    console.log(e);
+    
+  };
+
   return (
     <>
       <div
@@ -25,7 +33,7 @@ const SidePanel = () => {
         <i className="fas fa-calendar i-filter" />
         <div>
           <label className="switch">
-            <input type="checkbox" />
+            <input type="checkbox" onChange={handleChecked} />
             <span className="slider round" />
           </label>
         </div>
@@ -58,4 +66,7 @@ const SidePanel = () => {
   );
 };
 
-export default SidePanel;
+export default connect(
+  null,
+  { filter }
+)(SidePanel);

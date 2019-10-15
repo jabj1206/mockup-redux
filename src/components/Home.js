@@ -18,16 +18,12 @@ class Home extends Component {
           <SidePanel />
         </div>
         <div className="col-10">
-          {this.props.departures ? (
-            this.props.departures.length > 0 ? (
-              <Departures departuresss={this.props.departures} />
-            ) : (
-              <h3 className="text-center" style={{ marginTop: "100px" }}>
-                No Results =(
-              </h3>
-            )
+          {this.props.departures.length >0  ? (
+            <Departures departuresss={this.props.departures} />
           ) : (
-            <div>nada</div>
+            <h3 className="text-center" style={{ marginTop: "100px" }}>
+              No Results =(
+            </h3>
           )}
         </div>
         <Link to="/new" className=" row add-button justify-content-center">

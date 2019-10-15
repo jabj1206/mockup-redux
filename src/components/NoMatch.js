@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 const NoMatch = ({ location }) => (
   <h3 className="text-center">
