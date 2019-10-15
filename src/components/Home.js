@@ -19,6 +19,7 @@ class Home extends Component {
         <div className="col-2 left-border">
           <SidePanel />
         </div>
+        
         <div className="col-10">
           {departures.length > 0 ? (
             <Departures departuresss={departures} />
