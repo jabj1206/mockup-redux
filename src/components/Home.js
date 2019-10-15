@@ -31,7 +31,7 @@ class Home extends Component {
         <Link to="/new" className=" row add-button justify-content-center">
           <i
             className="fa fa-plus "
-            style={{ fontSize: "50px", marginTop: "25px" }}
+            style={{ fontSize: "50px", marginTop: "25px", color: 'white' }}
           ></i>
         </Link>
       </>
