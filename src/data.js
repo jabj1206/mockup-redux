@@ -1,7 +1,7 @@
 const depar = [
   {
     id: 0,
-    date: "2019-06-12",
+    date: "2019-10-12",
     hour: "19:34",
     from: "Houston, TX, 33619",
     to: "Atlanta, GA, 30123",

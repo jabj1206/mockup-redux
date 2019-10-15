@@ -1,13 +1,14 @@
 import React from "react";
 import { deleteDeparture } from "../actions/index";
 import { connect } from "react-redux";
+import {Link} from 'react-router-dom'
 import Moment from "react-moment";
 import NumberFormat from "react-number-format";
 
 import "./styles/departure.css";
 
 const Departure = props => {
-  const _onClick = () => {
+  const _onClick = (e) => {
     return props.deleteDeparture(props.departure.id);
   };
 
@@ -75,18 +76,18 @@ const Departure = props => {
             <i className="fa fa-ellipsis-v"></i>
           </button>
           <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a className="dropdown-item" href="/" onClick={_onClick}>
+            <button className="dropdown-item"  onClick={_onClick}>
               <span className="obj">
                 <i className="departureE fa fa-trash"></i>
                 &nbsp;Delete
               </span>
-            </a>
-            <a className="dropdown-item" href="/">
+            </button>
+            <Link to={`/edit/${props.departure.id}`} className="dropdown-item">
               <span className="obj">
                 <i className="fa fa-edit" />
                 &nbsp;Edit
               </span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

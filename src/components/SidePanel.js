@@ -5,10 +5,9 @@ import { connect } from "react-redux";
 import { filter } from "../actions/index";
 import "./styles/sidePanel.css";
 
-const SidePanel = () => {
+const SidePanel = (props) => {
   const handleChecked = e => {
-    console.log(e);
-    
+        props.filter(e.target.checked)
   };
 
   return (

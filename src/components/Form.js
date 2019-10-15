@@ -9,33 +9,39 @@ class Form extends Component {
     if (touched && error) {
       return (
         <div className="invalid-feedback">
-          <i className="fa fa-times-circle"/>
+          <i className="fa fa-times-circle" />
           {error}
         </div>
       );
     }
   }
 
-  renderInput = ({ input, label, type, meta }) => {
-       const className = `form-control ${meta.error && meta.touched ? 'is-invalid': '' }`
+  renderInput = ({ input, label, type, meta, value }) => {
+    const className = `form-control ${
+      meta.error && meta.touched ? "is-invalid" : ""
+    }`;
     return (
       <>
         <label>{label}</label>
-        <input {...input} type={type} className={className} />
+        <input
+          {...input}
+          type={type}
+          className={className}
+          autoComplete="off"
+        />
         {this.renderError(meta)}
       </>
     );
   };
 
-  onSubmit=(formValues)=> {
-    this.props.onSubmit(formValues)
+  onSubmit = formValues => {
+    this.props.onSubmit(formValues);
     history.push("/");
-  }
+  };
 
   render() {
-   
     return (
-      <div className="col-10 offset-2">
+      <div className="col-12">
         <br />
         <form className="" onSubmit={this.props.handleSubmit(this.onSubmit)}>
           <div className="form-row">

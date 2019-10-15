@@ -8,6 +8,13 @@ export const initialState = () => {
   };
 };
 
+export const listDeparture = id => {
+  return {
+    type: "LIST_DEPARTURE",
+    payload: id
+  };
+};
+
 export const listDepartures = () => {
   return {
     type: "LIST_DEPARTURES"
@@ -18,6 +25,14 @@ export const createDeparture = formValues => {
   return {
     type: "CREATE_DEPARTURE",
     payload: formValues
+  };
+};
+
+export const updateDeparture = (formValues, id) => {
+  return {
+    type: "UPDATE_DEPARTURE",
+    payload: formValues,
+    id: id
   };
 };
 
@@ -42,7 +57,7 @@ export const search = data => {
 
 export const filter = filter => {
   return {
-    type: "SORT",
+    type: "FILTER",
     payload: filter
   };
 };

@@ -12,14 +12,16 @@ class Home extends Component {
   }
 
   render() {
+    const {departures} = this.props.departures
+ 
     return (
       <>
         <div className="col-2 left-border">
           <SidePanel />
         </div>
         <div className="col-10">
-          {this.props.departures.length >0  ? (
-            <Departures departuresss={this.props.departures} />
+          {departures.length > 0 ? (
+            <Departures departuresss={departures} />
           ) : (
             <h3 className="text-center" style={{ marginTop: "100px" }}>
               No Results =(
