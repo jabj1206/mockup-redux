@@ -62,3 +62,25 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+.page-title:after {
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+  width: 80%; /* Change this to whatever width you want. */  
+  border-bottom: 2px solid rgb(209, 209, 209); /* This creates the border. Replace black with whatever color you want. */
+}
+
+.left-border{
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+  width: 80%; /* Change this to whatever width you want. */  
+  border-right: 2px solid rgb(209, 209, 209); /* This creates the border. Replace black with whatever color you want. */
+}
+
+.delivered{
+  background-color: white;
+  height: 35px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}

@@ -8,7 +8,7 @@ const Header = () => {
     <div className="row ">
       <div className="col-2 d-flex justify-content-center">
         <div>
-          <img src="./logo512.png" alt="" style={{ height: "100px" }} />
+          <img src="./logistic.png" alt="" style={{ height: "100px" }} />
         </div>
       </div>
       <div className="col-10">

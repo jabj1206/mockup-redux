@@ -14,7 +14,7 @@ const Departure = props => {
 
   let HyD = `${props.departure.date} ${props.departure.hour}`;
   return (
-    <li style={{ marginBottom: "20px" }}>
+    <li style={{ marginBottom: "20px", height:'100px' }}>
       <div className="icon">
         <i
           className="fa fa-check-circle"
@@ -49,7 +49,7 @@ const Departure = props => {
         <i
           className="fa fa-truck"
           style={{ color: "#858585", fontSize: "32px" }}
-        ></i>
+        />
       </div>
       <div className="ship" style={{ fontSize: "26px" }}>
         <NumberFormat
@@ -76,7 +76,7 @@ const Departure = props => {
             <i className="fa fa-ellipsis-v"></i>
           </button>
           <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <button className="dropdown-item"  onClick={_onClick}>
+            <button className="dropdown-item"  style={{color: 'red'}} onClick={_onClick}>
               <span className="obj">
                 <i className="departureE fa fa-trash"></i>
                 &nbsp;Delete

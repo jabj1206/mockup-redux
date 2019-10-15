@@ -4,17 +4,6 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-.page-title:after {
-  content: ""; /* This is necessary for the pseudo element to work. */ 
-  width: 80%; /* Change this to whatever width you want. */  
-  border-bottom: 1px solid gray; /* This creates the border. Replace black with whatever color you want. */
-}
-
-.left-border{
-  content: ""; /* This is necessary for the pseudo element to work. */ 
-  width: 80%; /* Change this to whatever width you want. */  
-  border-right: 1px solid gray; /* This creates the border. Replace black with whatever color you want. */
-}
 
 .add-button{
   position: Fixed;
